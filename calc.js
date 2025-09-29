@@ -27,7 +27,6 @@ function startCalculator() {
     return value;
   };
 
-  // render 함수
   const render = function (showEq = false) {
     if (operator) {
       exprEl.textContent = `${value} ${operator} ${inputValue}${showEq ? ' =' : ''}`;
