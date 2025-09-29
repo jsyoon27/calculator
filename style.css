@@ -1,0 +1,85 @@
+/* Reset */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html{
+  font-size:62.5%;
+}
+body{
+  min-height:100dvh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+  font-family: system-ui, sans-serif;
+}
+
+.calculator{
+  width:412px;
+  height:784px;
+  border-radius:24px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  background:#E0E0E0;
+  border:1px solid #8E8E8E;
+}
+
+.display{
+  height:184px;
+  padding:16px 20px;
+  background:#413C3C;
+  color:#fff;
+  border-bottom:1px solid #8E8E8E;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.display .expression{
+  font-size:3rem;
+  line-height:3.6rem;
+  font-weight:400;   
+  opacity:.98;
+}
+.display .result{
+  font-size: 64px;
+  font-weight: 700;
+  text-align: right;
+  margin-top: 8px;
+}
+
+.keys{
+  display:grid;
+  grid-template-columns:repeat(4, 103px);
+  grid-auto-rows:120px;
+  gap:0;
+  justify-content:center;
+}
+
+.button{
+  font-size:5rem;
+  line-height:6.1rem;
+  font-weight:400;   
+  background:#E0E0E0;
+  color:#000;
+  border:1px solid #8E8E8E;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  user-select:none;
+}
+.button.divide,
+.button.multiply,
+.button.minus,
+.button.plus,
+.button.equal {
+  background:#E89650;
+  color:#fff;
+  font-weight:400;
+}
+
+.ac{grid-column:span 2}
+.zero{grid-column:span 2}
